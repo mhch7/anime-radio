@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dragon Ball Radio</title>
+    <link rel="stylesheet" href="dbz.css">
+</head>
+<body>
+
+    <audio src="/music/dbz/cha.mp3"id="song"></audio>
+    
+    <div class="container"> 
+        
+        <img src="/assets/play.png" onclick="playPause()" id="play-pause" />
+        <img src="/assets/forward.png" onclick="nextSong()" id="next-song" />
+        <img src="/assets/backward.png" onclick="previousSong()" id="previous-song" />
+        <div class="rotate">
+            <img src="/assets/4.png" alt="four"></div>
+        <div class="song-title">Cha-La Head-Cha-La</div>
+        <div class="song-artist">Hironobu Kageyama</div>
+       
+        
+        <input 
+            type="range" 
+            id="progress-bar" 
+            min="0" 
+            max="" 
+            value="0" 
+            onchange="changeProgressBar()"
+        />
+
+       
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+    </div>
+    
+    <script src="dbz.js"></script>
+
+</body>
+</html>

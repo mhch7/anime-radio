@@ -1,0 +1,36 @@
+@font-face {
+    font-family:'Pixel' ;
+    src: url(assets/p.ttf);
+}
+body {
+    background-image: url('assets/mk2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+    min-width: 696px;
+	list-style: none;
+    
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+
+        h1{
+            text-align: center;
+            font-family: 'Pixel','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 50px;
+        }
+img{
+    width: 250px;
+    height: 250px;
+    
+}

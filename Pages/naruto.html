@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naruto Radio</title>
+    <link rel="stylesheet" href="naruto.css">
+</head>
+<body>
+   
+    <audio src="/music/naruto/Heros Come Back.mp3"id="song"></audio>
+    
+    <div class="container"> 
+        <img src="/assets/play.png" onclick="playPause()" id="play-pause" />
+        <img src="/assets/forward.png" onclick="nextSong()" id="next-song" />
+        <img src="/assets/backward.png" onclick="previousSong()" id="previous-song" />
+       
+        <div class="song-title">Heros Come Back</div>
+        <div class="song-artist">Nobodyknows+</div>
+        <input 
+            type="range" 
+            id="progress-bar" 
+            min="0" 
+            max="" 
+            value="0" 
+            onchange="changeProgressBar()"
+        />
+    <div class="rotate">
+    <img src="/assets/rin.png" alt="rin"></div>
+
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+    </div>
+    
+    <div class="nvs">
+        <img src="/assets/nvs.gif">
+    </div>
+
+    <script src="naruto.js"></script>
+
+</body>
+</html>
